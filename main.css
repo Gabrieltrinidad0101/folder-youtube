@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+.main{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 5% auto;
+}
+
+.main .containerBackFolder{
+    width: 100%;        
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+
+.containerBackFolder button{
+    margin-left: 10px;
+    background: blue;
+    border: none;
+    width: 30px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.main .containerFolders{
+    display: grid;
+    grid-template-columns: repeat(5,270px);
+    gap: 10px;
+    height: 300px;
+    justify-content: center;
+}
+
+.folder{
+    background: rgb(175, 175, 175);
+    width:150px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.folder h2{
+    margin-top: 10%;
+}
+
+.folder div{
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.folder div:hover{
+    color: red;
+}
+
+
+.addButton{
+    background: blue;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    left: 90%;
+    top:90%;
+    cursor: pointer;
+}
+
